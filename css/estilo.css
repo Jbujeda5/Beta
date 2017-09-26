@@ -1,6 +1,6 @@
 /*Cabecera de la pagina*/
 
-h1{
+h1 {
     position: static;
     text-align: center;
     padding: 1%;
@@ -9,6 +9,7 @@ h1{
 }
 
 /* Menu horizontal de opciones*/
+
 ul {
     list-style-type: none;
     margin: 0;

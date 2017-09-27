@@ -5,10 +5,14 @@
     margin: 0;
 }
 
+body{
+    background-color: #7B0000;
+}
+
 /* Menu horizontal de opciones*/
 
 #menu {
-    background: #333;
+    background-color: #333;
     color: white;
     height: 80px;
 }
@@ -24,10 +28,6 @@
     float: left;
     padding: 15px 0 0 20px;
     text-decoration: none;
-}
-
-#logo:hover {
-    color: #0b76a6;
 }
 
 #logo .sitio {
@@ -73,15 +73,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #0b76a6;
+    background-color: #68736F;
+    color: #D7D9D8;
 }
 
 nav > ul > li.selected a {
-    color: blue;
+    color: crimson;
 }
-
-<<<<<<< HEAD
-
-=======
-/* Fin del estilo del menu*/
->>>>>>> Beta/master

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/formulario.css" rel="stylesheet" type="text/css" />
+    <title>Formulario Registro</title>
+</head>
+
+<body>
+    <div>
+       <h2>Formulario de registro</h2>
+        <form id="registro">
+
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input class="inputClass" type="text" name="nombre" value="" placeholder="nombre" required/>
+            </div>
+
+            <div>
+                <label for="apellido1">Apellido1:</label>
+                <input type="text" class="inputClass" name="apellido1" value="" placeholder="apellido1" required/>
+            </div>
+
+            <div>
+                <label for="apellido2">Apellido2:</label>
+                <input type="text" class="inputClass" name="apellido2" value="" placeholder="apellido2" />
+            </div>
+
+            <div>
+                <label for="direccion">Dirección:</label>
+
+                <input type="text" class="inputClass" name="direccion" value="" placeholder="direccion" required/>
+
+
+            </div>
+
+            <div>
+                <label for="telefono">Telefono:</label> <input type="tel" class="inputClass" name="telefono" value="" placeholder="telefono" />
+
+
+            </div>
+
+            <div>
+                <label for="mvl">Mvl:</label>
+                <input type="tel" class="inputClass" name="mvl" value="" placeholder="telefono" required/>
+
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" class="inputClass" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" name="email" value="" placeholder="email" required/>
+
+
+            </div>
+
+            <div>
+                <label for="password">Contraseña:</label>
+
+                <input type="password" class="inputClass" name="password" value="" placeholder="password" required/>
+
+            </div>
+            <div>
+                <label>Repetir Contraseña:</label>
+
+                <input type="password" class="inputClass" name="password2" value="" placeholder="repita password" required />
+
+            </div>
+
+            <div>
+                <input type="submit" name="valida" value="Aceptar" />
+                <input type="submit" name="cancela" value="Cancelar" />
+            </div>
+
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>

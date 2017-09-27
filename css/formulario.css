@@ -1,0 +1,25 @@
+#registro {
+    font: 14px arial, sans-serif;
+}
+
+.inputClass {
+    background-repeat: no-repeat;
+    padding: 5px 5px 5px 25px;
+    width: 200px;
+}
+
+input:focus {
+    background-color: bisque;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+#registro div label{
+    display: inline-block;
+    width: 87px;
+}
+#registro div{
+    
+    
+}

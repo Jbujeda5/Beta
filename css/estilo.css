@@ -112,3 +112,22 @@ nav > ul > li.selected a {
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
+
+
+/*Estilo Tematica*/
+div.textoTematica{
+    margin-top: 10%;
+    border: solid #333;
+    background-color: #68736F;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+h1.tituloTematica{
+    text-align: center;
+}
+
+/*Fin Estilo Tematica*/

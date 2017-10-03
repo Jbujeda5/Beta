@@ -116,7 +116,7 @@ nav > ul > li.selected a {
 
 /*Estilo Tematica*/
 div.textoTematica{
-    margin-top: 10%;
+    margin-top: 5%;
     border: solid #333;
     background-color: #68736F;
     width: 50%;
@@ -126,8 +126,49 @@ div.textoTematica{
     padding: 5px;
 }
 
+h1.galTematica{
+    font-size: 300%;
+    margin-top: 5%;
+    text-align: center;
+}
+
 h1.tituloTematica{
     text-align: center;
+}
+
+hr{
+    border-radius: 25%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #333;
+}
+div.fotosTematica{
+    margin-top: 5%;
+    border: solid #333;
+    background-color: #333;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 5%;
+}
+
+div.fotoTema{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    float: left;
+}
+
+div.fotoTema > img{
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+div.fotoTema > img:hover{
+    opacity: 0.7;
 }
 
 /*Fin Estilo Tematica*/

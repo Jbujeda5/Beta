@@ -143,16 +143,41 @@ hr{
     margin-right: auto;
     border: solid #333;
 }
+
 div.fotosTematica{
-    margin-top: 5%;
-    border: solid #333;
-    background-color: #333;
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
-    padding: 5px;
-    margin-bottom: 5%;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 5%;
+    grid-gap: 10px;
+    background-color: #333;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "arriba1 arriba2 arriba3"
+        "abajo1 abajo2 abajo3";
+}
+
+div.fotosTema1{
+    grid-area: "arriba1";
+}
+div.fotosTema2{
+    grid-area: "arriba2";
+}
+div.fotosTema3{
+    grid-area: "arriba3";
+}
+div.fotosTema4{
+    grid-area: "abajo1";
+}
+div.fotosTema5{
+    grid-area: "abajo2";
+}
+div.fotosTema6{
+    grid-area: "abajo3";
 }
 
 div.fotoTema{
@@ -162,13 +187,13 @@ div.fotoTema{
     float: left;
 }
 
-div.fotoTema > img{
+div.fotosTematica > div > img{
     border-radius: 12px;
     transition: 0.2s;
 }
 
-div.fotoTema > img:hover{
-    opacity: 0.7;
+div.fotosTematica > div > img:hover{
+    opacity: 0.6;
 }
 
 /*Fin Estilo Tematica*/

@@ -163,36 +163,16 @@ div.fotosTematica{
     padding: 10px;
     margin-top: 1%;
     grid-gap: 10px;
-/*    background-color: #333;*/
     width: 50%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "arriba1 arriba2 arriba3"
-        "abajo1 abajo2 abajo3";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-div.fotosTema1{
-    grid-area: "arriba1";
-}
-div.fotosTema2{
-    grid-area: "arriba2";
-}
-div.fotosTema3{
-    grid-area: "arriba3";
-}
-div.fotosTema4{
-    grid-area: "abajo1";
-}
-div.fotosTema5{
-    grid-area: "abajo2";
-}
-div.fotosTema6{
-    grid-area: "abajo3";
-}
 
-div.fotosTematica > div > img{
+div.fotoTema > img{
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 12px;
     transition: 0.2s;
 }

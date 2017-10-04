@@ -1,14 +1,16 @@
 /*Elimina margenes y paddings que agrega el navegador*/
+
 * {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: #7B0000;
 }
 
 /* Menu horizontal de opciones*/
+
 #menu {
     background-color: #333;
     color: white;
@@ -21,6 +23,7 @@ body{
 }
 
 /*Logo*/
+
 #logo {
     float: left;
     padding: 15px 0 0 20px;
@@ -53,6 +56,7 @@ body{
 }
 
 /*Navegacion*/
+
 nav {
     float: left;
     margin-left: 10%
@@ -86,22 +90,23 @@ nav ul li a:hover {
 }
 
 /*Slider de imagenes*/
+
 #slider {
-	width: 95%;
-	margin: auto;
-	overflow: hidden;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
 }
 
 #slider > ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	animation: cambio 20s infinite alternate linear;
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
 }
 
 #slider li {
-	width: 100%;
-	list-style: none;
+    width: 100%;
+    list-style: none;
 }
 
 #slider img {
@@ -111,51 +116,76 @@ nav ul li a:hover {
 }
 
 @keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
 
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
 
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
 
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
 }
 
 
 /*Estilo Tematica*/
-div.textoTematica{
+
+div.textoTematica {
+    text-indent: 5%;
     margin-top: 5%;
-    border: solid #333;
-    background-color: #68736F;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 20px;
-    padding: 5px;
+    padding: 20Px;
 }
 
-h1.galTematica{
+h1.galTematica {
     font-size: 300%;
     margin-top: 5%;
     text-align: center;
 }
 
-h1.tituloTematica{
-    text-align: center;
+h1.tituloTematica {}
+
+img.logoTema {
+    float: right;
+    margin-right: 5%;
 }
 
-hr.tema{
+hr.tema {
     border-radius: 25%;
     width: 30%;
-    margin-left: auto;
-    margin-right: auto;
     border: solid #333;
+    margin-bottom: 5%;
 }
 
-div.fotosTematica{
+hr.temaGaleria {
+    border-radius: 25%;
+    width: 30%;
+    border: solid #333;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.fotosTematica {
     border: solid #333;
     background-color: #68736F;
     margin-left: auto;
@@ -171,14 +201,14 @@ div.fotosTematica{
 }
 
 
-div.fotoTema > img{
+div.fotoTema > img {
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 12px;
     transition: 0.2s;
 }
 
-div.fotosTematica > div > img:hover{
+div.fotosTematica > div > img:hover {
     opacity: 0.6;
 }
 

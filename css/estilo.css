@@ -147,7 +147,7 @@ h1.tituloTematica{
     text-align: center;
 }
 
-hr{
+hr.tema{
     border-radius: 25%;
     width: 30%;
     margin-left: auto;
@@ -156,13 +156,15 @@ hr{
 }
 
 div.fotosTematica{
+    border: solid #333;
+    background-color: #68736F;
     margin-left: auto;
     margin-right: auto;
     border-radius: 12px;
     padding: 10px;
-    margin-top: 5%;
+    margin-top: 1%;
     grid-gap: 10px;
-    background-color: #333;
+/*    background-color: #333;*/
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -189,13 +191,6 @@ div.fotosTema5{
 }
 div.fotosTema6{
     grid-area: "abajo3";
-}
-
-div.fotoTema{
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-bottom: 1%;
-    float: left;
 }
 
 div.fotosTematica > div > img{

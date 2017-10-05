@@ -149,10 +149,9 @@ nav ul li a:hover {
 /*Estilo Tematica*/
 
 div.textoTematica {
+    background-image: url(../img/fondoTexto.png);
     text-indent: 5%;
     margin-top: 5%;
-    width: 50%;
-    border-radius: 20px;
     padding: 20Px;
 }
 
@@ -161,8 +160,6 @@ h1.galTematica {
     margin-top: 5%;
     text-align: center;
 }
-
-h1.tituloTematica {}
 
 img.logoTema {
     float: right;
@@ -212,4 +209,10 @@ div.fotosTematica > div > img:hover {
     opacity: 0.6;
 }
 
+p.main {
+    margin-right: 50%;
+}
+
 /*Fin Estilo Tematica*/
+
+

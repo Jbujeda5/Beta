@@ -1,12 +1,3 @@
-/*Tipografia*/
-
-body{
-
-}
-
-
-/*Fin Tipografia*/
-
 /*Elimina margenes y paddings que agrega el navegador*/
 
 * {
@@ -15,9 +6,9 @@ body{
 }
 
 body {
-    background-color: white;
+    background-image: url(/img/fondoTextura.jpg);
+    background-size: cover;
     font-family: 'Arimo', sans-serif;
-/*    7B0000*/
 }
 
 /* Menu horizontal de opciones*/
@@ -160,16 +151,16 @@ nav ul li a:hover {
 /*Estilo Tematica*/
 
 div.textoTematica {
-   box-shadow: 4px 3px 61px 26px rgba(0,0,0,0.54);
-   height: 100%;
-   width: 100% ;
-   text-align: center;
+    box-shadow: 4px 3px 61px 26px rgba(0, 0, 0, 0.54);
+    height: 100%;
+    width: 100%;
+    text-align: center;
     text-indent: 5%;
     margin-top: 5%;
     padding: 50px;
 }
 
-p.main{
+p.main {
     color: white;
     opacity: 90%;
 }
@@ -202,14 +193,11 @@ hr.tema {
 hr.temaGaleria {
     border-color: #F9D55C;
     width: 30%;
-/*    margin-bottom: %;*/
     margin-left: auto;
     margin-right: auto;
 }
 
 div.fotosTematica {
-/*    border: solid #333;*/
-/*    background-color: #68736F;*/
     margin-left: auto;
     margin-right: auto;
     border-radius: 12px;
@@ -238,26 +226,14 @@ p.main {
     margin-right: 50%;
 }
 
-/*Fin Estilo Tematica*/
-
-
-.tituloTematica {
-    color:white;
-}
-
-
-
-
-
-
-
-
 
 .marcoCentral {
-   background-image:url(/img/Banner_OW2.png);
-    background-size:cover;
-/*
-   background-size:100% 100%;
-   background-size:100% 100%;
-*/
+    background-image: url(/img/Banner_OW2.png);
+    background-size: cover;
 }
+
+.tituloTematica {
+    color: white;
+}
+
+/*Fin Estilo Tematica*/

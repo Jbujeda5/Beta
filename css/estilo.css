@@ -1,3 +1,12 @@
+/*Tipografia*/
+
+body{
+
+}
+
+
+/*Fin Tipografia*/
+
 /*Elimina margenes y paddings que agrega el navegador*/
 
 * {
@@ -6,7 +15,9 @@
 }
 
 body {
-    background-color: #7B0000;
+    background-color: white;
+    font-family: 'Arimo', sans-serif;
+/*    7B0000*/
 }
 
 /* Menu horizontal de opciones*/
@@ -149,11 +160,18 @@ nav ul li a:hover {
 /*Estilo Tematica*/
 
 div.textoTematica {
-    box-shadow: 10px 10px 5px 0px;
-    background-color:#68736F;
+   box-shadow: 4px 3px 61px 26px rgba(0,0,0,0.54);
+   height: 100%;
+   width: 100% ;
+   text-align: center;
     text-indent: 5%;
     margin-top: 5%;
-    padding: 20Px;
+    padding: 50px;
+}
+
+p.main{
+    color: white;
+    opacity: 90%;
 }
 
 h1.galTematica {
@@ -170,7 +188,7 @@ img.logoTema {
 }
 
 .logoTema:hover {
-    width: 45%;
+    width: 34%;
 }
 
 
@@ -182,17 +200,16 @@ hr.tema {
 }
 
 hr.temaGaleria {
-    border-radius: 25%;
+    border-color: #F9D55C;
     width: 30%;
-    border: solid #333;
-    margin-bottom: 5%;
+/*    margin-bottom: %;*/
     margin-left: auto;
     margin-right: auto;
 }
 
 div.fotosTematica {
-    border: solid #333;
-    background-color: #68736F;
+/*    border: solid #333;*/
+/*    background-color: #68736F;*/
     margin-left: auto;
     margin-right: auto;
     border-radius: 12px;
@@ -223,3 +240,24 @@ p.main {
 
 /*Fin Estilo Tematica*/
 
+
+.tituloTematica {
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+.marcoCentral {
+   background-image:url(/img/Banner_OW2.png);
+    background-size:cover;
+/*
+   background-size:100% 100%;
+   background-size:100% 100%;
+*/
+}

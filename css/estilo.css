@@ -149,7 +149,8 @@ nav ul li a:hover {
 /*Estilo Tematica*/
 
 div.textoTematica {
-    background-image: url(../img/fondoTexto.png);
+    box-shadow: 10px 10px 5px 0px;
+    background-color:#68736F;
     text-indent: 5%;
     margin-top: 5%;
     padding: 20Px;
@@ -162,9 +163,16 @@ h1.galTematica {
 }
 
 img.logoTema {
+    margin-top: 5%;
     float: right;
     margin-right: 5%;
+    transition: 0.5s;
 }
+
+.logoTema:hover {
+    width: 45%;
+}
+
 
 hr.tema {
     border-radius: 25%;
@@ -214,5 +222,4 @@ p.main {
 }
 
 /*Fin Estilo Tematica*/
-
 

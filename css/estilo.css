@@ -166,11 +166,12 @@ img.logoTema {
     margin-top: 5%;
     float: right;
     margin-right: 5%;
-    transition: 0.5s;
+    transition: 2s;
 }
 
-.logoTema:hover {
+img.logoTema:hover {
     width: 45%;
+transition: 2s;
 }
 
 

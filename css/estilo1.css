@@ -1,0 +1,128 @@
+/*Elimina margenes y paddings que agrega el navegador*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(/img/fondoTextura.jpg);
+    background-size: cover;
+    font-family: 'Arimo', sans-serif;
+}
+
+/* Menu horizontal de opciones*/
+
+#menu {
+    background-color: #333;
+    color: white;
+    height: 80px;
+}
+
+#menu > a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Logo*/
+
+#logo {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+}
+
+#logo .sitio {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#logo .sito-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
+}
+
+.log {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.sign {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/*Navegacion*/
+
+nav {
+    float: left;
+    margin-left: 10%
+}
+
+nav ul {
+    margin: 0;
+    padding: ;
+    padding-right: 50px;
+    text-align: center;
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 5px;
+    width: 140px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #68736F;
+    color: #D7D9D8;
+}
+
+/*Estilo para pagina 1*/
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#prin {
+    float: left;
+    width: 70%;
+    margin-left: 2.5%;
+}
+
+h1 {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    background: grey;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #333;
+}

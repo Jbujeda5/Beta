@@ -1,5 +1,4 @@
 /*Elimina margenes y paddings que agrega el navegador*/
-
 * {
     padding: 0;
     margin: 0;
@@ -92,21 +91,37 @@ nav ul li a:hover {
 }
 
 /*Estilo para pagina 1*/
-#container {
+
+.container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    flex-direction: row;
+
+    -webkit-flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
 #prin {
     float: left;
     width: 70%;
     margin-left: 2.5%;
+
+  padding: 5px;
+  margin-top: 10px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
 }
 
 h1 {
-    padding-top: 2.5%;
     padding-bottom: 2.5%;
     text-align: center;
 }

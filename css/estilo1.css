@@ -67,7 +67,6 @@ nav {
 nav ul {
     margin: 0;
     padding: ;
-    padding-right: 50px;
     text-align: center;
     list-style: none;
 
@@ -77,6 +76,17 @@ nav ul li {
     display: inline-block;
     line-height: 80px;
 }
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li a:hover + ul, nav ul li ul:hover {
+    display: block;
+    background-color: #333;
+}
+
+
 
 nav ul li a {
     display: block;
@@ -89,6 +99,14 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #68736F;
     color: #D7D9D8;
+}
+
+li.menuPadre {
+    position:relative
+}
+
+.manuHijo {
+    position: absolute;
 }
 
 /*Estilo para pagina 1*/

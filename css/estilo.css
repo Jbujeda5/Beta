@@ -67,7 +67,6 @@ nav {
 nav ul {
     margin: 0;
     padding: ;
-    padding-right: 50px;
     text-align: center;
     list-style: none;
 
@@ -77,6 +76,17 @@ nav ul li {
     display: inline-block;
     line-height: 80px;
 }
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li a:hover + ul, nav ul li ul:hover {
+    display: block;
+    background-color: #333;
+}
+
+
 
 nav ul li a {
     display: block;
@@ -227,6 +237,7 @@ div.fotosTematica > div > img:hover {
     opacity: 0.6;
 }
 
+
 p.main {
     margin-right: 50%;
 }
@@ -238,3 +249,32 @@ div.marcoCentral {
 }
 
 /*Fin Estilo Tematica*/
+
+/*Estilo Galeria*/
+
+div.Galeria {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 1%;
+    grid-gap: 10px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+div.Galeria > div > img:hover {
+    opacity: 0.6;
+}
+
+div.imagenGaleria > img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    transition: 0.2s;
+    max-height: 250px;
+}
+
+/*Fin estilo Galeria*/

@@ -101,6 +101,14 @@ nav ul li a:hover {
     color: #D7D9D8;
 }
 
+li.menuPadre {
+    position:relative
+}
+
+.manuHijo {
+    position: absolute;
+}
+
 /*Slider de imagenes*/
 
 #slider {
@@ -278,3 +286,4 @@ div.imagenGaleria > img {
 }
 
 /*Fin estilo Galeria*/
+

@@ -67,7 +67,6 @@ nav {
 nav ul {
     margin: 0;
     padding: ;
-    padding-right: 50px;
     text-align: center;
     list-style: none;
 
@@ -77,6 +76,17 @@ nav ul li {
     display: inline-block;
     line-height: 80px;
 }
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li a:hover + ul, nav ul li ul:hover {
+    display: block;
+    background-color: #333;
+}
+
+
 
 nav ul li a {
     display: block;
@@ -89,6 +99,14 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #68736F;
     color: #D7D9D8;
+}
+
+li.menuPadre {
+    position:relative
+}
+
+.manuHijo {
+    position: absolute;
 }
 
 /*Slider de imagenes*/
@@ -151,13 +169,14 @@ nav ul li a:hover {
 /*Estilo Tematica*/
 
 div.textoTematica {
+    overflow: hidden;
     box-shadow: 4px 3px 61px 26px rgba(0, 0, 0, 0.54);
-    height: 100%;
     width: 100%;
     text-align: center;
     text-indent: 5%;
     margin-top: 5%;
     padding: 50px;
+    box-sizing: border-box;
 }
 
 p.main {
@@ -175,9 +194,13 @@ img.logoTema {
     margin-top: 5%;
     float: right;
     margin-right: 5%;
-    transition: 0.5s;
+    transition: 2s;
 }
 
+img.logoTema:hover {
+    width: 45%;
+transition: 2s;
+}
 .logoTema:hover {
     width: 34%;
 }
@@ -222,18 +245,45 @@ div.fotosTematica > div > img:hover {
     opacity: 0.6;
 }
 
+
 p.main {
     margin-right: 50%;
 }
 
 
-.marcoCentral {
+div.marcoCentral {
     background-image: url(/img/Banner_OW2.png);
     background-size: cover;
 }
 
-.tituloTematica {
-    color: white;
+/*Fin Estilo Tematica*/
+
+/*Estilo Galeria*/
+
+div.Galeria {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 1%;
+    grid-gap: 10px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
 }
 
-/*Fin Estilo Tematica*/
+div.Galeria > div > img:hover {
+    opacity: 0.6;
+}
+
+div.imagenGaleria > img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    transition: 0.2s;
+    max-height: 250px;
+}
+
+/*Fin estilo Galeria*/
+

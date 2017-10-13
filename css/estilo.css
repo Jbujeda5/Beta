@@ -256,6 +256,11 @@ div.marcoCentral {
     background-size: cover;
 }
 
+div.marcoCentralLol {
+    background-image: url(/img/Banner_lol.jpg);
+    background-size: cover;
+}
+
 /*Fin Estilo Tematica*/
 
 /*Estilo Galeria*/

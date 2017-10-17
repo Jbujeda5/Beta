@@ -134,11 +134,6 @@ li.menuPadre {
 
     padding: 5px;
     margin-top: 10px;
-
-    /*color: white;
-    font-weight: bold;
-    font-size: 2em;
-    text-align: center;*/
 }
 
 h1.who {
@@ -154,7 +149,7 @@ hr.theme {
     margin-right: auto;
 }
 
-p {
+#txt {
     text-align: center;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     color: #ffffff;

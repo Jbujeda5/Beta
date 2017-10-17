@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title>Bar temático</title>
+
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/zero-logo.jpg" type="image/png" />
+
+</head>
+
+<body>
+    <header id="menu">
+
+        <!-- Logo del header -->
+
+        <a id="logo" href="index.html">
+            <span class="sitio">Bar Tematico</span>
+            <span class="sitio-desc">Proyecto Interface - Fase Zero</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="pag1.html">¿Quienes Somos?</a></li>
+                <li><a href="menus.html">Menus</a></li>
+                <li class="menuPadre"><a href="tematicaOv.html">Zonas</a>
+                    <ul class="manuHijo">
+                        <li><a href="tematicaOv.html">Overwatch</a></li><br>
+                        <li><a href="tematicaLol.html">League of Legends</a></li>
+                        <li><a href="tematicaWow.html">World of Warcraft</a></li>
+                    </ul>
+                </li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="">Reserva</a></li>
+            </ul>
+        </nav>
+
+        <span class="log">Login</span>
+        <span class="sign">Sign Up</span>
+    </header>
+
+    <section class="reserva">
+        <h1 class="reserva">Elige zona</h1>
+        <div class="Galeria">
+            <a href="#modalZonaLol"><img class="imagenReserva" src="img/Iconolol.jpg"></a>
+            <div id="modalZonaLol" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Zona League of Legends</h2>
+                    <form>
+                        <div>
+                            <label for="mesa">Mesa:</label>
+                            <select name="mesaLol" form="mesaLolForm" required>
+                                <option value="bot">Bot</option>
+                                <option value="mid">Mid</option>
+                                <option value="jungla">Jungla</option>
+                                <option value="top">Top</option>
+                            </select >
+                        </div>
+                        <div>
+                            <label for="mesa">Número de personas:</label>
+                            <input type="number" max="8" min="3" required>
+                        </div>
+
+                        <div>
+                            <label for="fecha">Fecha:</label>
+                            <input type="datetime-local" required>
+                        </div>
+
+                        <div>
+                            <label for="contacto">Nombre:</label>
+
+                            <input type="text" class="inputClass" name="nombre" value="" placeholder="nombre" required/>
+
+
+                        </div>
+
+                        <div>
+                            <label for="telefono">Telefono:</label> <input type="tel" class="inputClass" name="telefono" value="" placeholder="telefono" required/>
+                        </div>
+
+                        <div>
+                            <label for="obsevaciones">Obsevaciones:</label> <input type="textarea" class="inputClass" name="obser" value="" placeholder="observaciones"/>
+                        </div>
+                        <div>
+                            <input type="submit" name="valida" value="Aceptar" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#modalZonaOw"><img class="imagenReserva" src="img/iconoOw.png"></a>
+            <div id="modalZonaOw" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Zona Overwatch</h2>
+                        <form>
+                        <div>
+                            <label for="mesa">Mesa:</label>
+                            <select name="mesaOw" form="mesaLolForm" required>
+                                <option value="bot">Hanamura</option>
+                                <option value="mid">Dorado</option>
+                                <option value="jungla">King's Row</option>
+                                <option value="top">Route 66</option>
+                            </select >
+                        </div>
+                        <div>
+                            <label for="mesa">Número de personas:</label>
+                            <input type="number" max="8" min="3" required>
+                        </div>
+
+                        <div>
+                            <label for="fecha">Fecha:</label>
+                            <input type="datetime-local" required>
+                        </div>
+
+                        <div>
+                            <label for="contacto">Nombre:</label>
+
+                            <input type="text" class="inputClass" name="nombre" value="" placeholder="nombre" required/>
+
+
+                        </div>
+
+                        <div>
+                            <label for="telefono">Telefono:</label> <input type="tel" class="inputClass" name="telefono" value="" placeholder="telefono" required/>
+                        </div>
+
+                        <div>
+                            <label for="obsevaciones">Obsevaciones:</label> <input type="textarea" class="inputClass" name="obser" value="" placeholder="observaciones"/>
+                        </div>
+                        <div>
+                            <input type="submit" name="valida" value="Aceptar" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#modalZonaWow"><img class="imagenReserva" src="img/iconoWow.png"></a>
+            <div id="modalZonaWow" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Zona Warcraft</h2>
+                                        <form>
+                        <div>
+                            <label for="mesa">Mesa:</label>
+                            <select name="mesaWow" form="mesaLolForm" required>
+                                <option value="bot">Stormwind</option>
+                                <option value="mid">Orgrimmar</option>
+                                <option value="jungla">Undercity</option>
+                                <option value="top">Darnassus</option>
+                            </select >
+                        </div>
+                        <div>
+                            <label for="mesa">Número de personas:</label>
+                            <input type="number" max="8" min="3" required>
+                        </div>
+
+                        <div>
+                            <label for="fecha">Fecha:</label>
+                            <input type="datetime-local" required>
+                        </div>
+
+                        <div>
+                            <label for="contacto">Nombre:</label>
+
+                            <input type="text" class="inputClass" name="nombre" value="" placeholder="nombre" required/>
+
+
+                        </div>
+
+                        <div>
+                            <label for="telefono">Telefono:</label> <input type="tel" class="inputClass" name="telefono" value="" placeholder="telefono" required/>
+                        </div>
+
+                        <div>
+                            <label for="obsevaciones">Obsevaciones:</label> <input type="textarea" class="inputClass" name="obser" value="" placeholder="observaciones"/>
+                        </div>
+                        <div>
+                            <input type="submit" name="valida" value="Aceptar" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

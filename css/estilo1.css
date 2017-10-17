@@ -134,26 +134,29 @@ li.menuPadre {
 
     padding: 5px;
     margin-top: 10px;
+}
 
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
+h1.who {
+    font-size: 300%;
+    margin-top: 2.5%;
     text-align: center;
 }
 
-h1 {
-    padding-bottom: 2.5%;
-    text-align: center;
+hr.theme {
+    border-color: #F9D55C;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p {
+#txt {
     text-align: center;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
     background: grey;
-    margin: 0 0 25px;
+    margin: 25px 0 25px;
     overflow: hidden;
     padding: 20px;
     border-radius: 35px 0px 35px 0px;
@@ -167,7 +170,8 @@ p {
     margin-top: 2.5%;
 }
 
-iframe {
-    float: center;
-    border-bottom: 2.5%;
+#mapa {
+    margin-left: 78%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }

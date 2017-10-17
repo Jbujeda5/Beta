@@ -11,14 +11,20 @@
     background-repeat: no-repeat;
     padding: 5px 5px 5px 25px;
     width: 200px;
+    border-radius: 10px;
     
 }
 
 input:focus {
-    background-color: #68736f;
+    background-color: lightgray;
     outline: none;
     border-color: #68736f;
     box-shadow: 0 0 10px #68736f;
+}
+
+#registro{
+    border-radius: 10px;
+    
 }
 
 #registro div{    
@@ -26,21 +32,37 @@ input:focus {
     padding-left: 10px;
 }
 
+#titulo{
+    padding-top: 10px;
+    
+}
+
 #registro div label{
     display: inline-block;
     font-weight: bold;
     color:white;
     width: 87px;
+    text-align: right;
     
 }
+
+
 #registro div h2{
     text-align: center;
     color:white;
     
 }
 
+#botones{
+    padding-bottom: 10px;
+    
+}
+
 #aceptar{    
     width: 150px;
+    background: #68736f;
+    color:white;
+    border-radius: 10px;
     
 }
 
@@ -48,5 +70,9 @@ input:focus {
     width: 150px;
     float:right;
     margin-right: 10px;
+     background: #68736f;
+    color:white;
+    border-radius: 10px;
+    
     
 }

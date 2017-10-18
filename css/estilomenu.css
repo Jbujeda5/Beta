@@ -11,105 +11,6 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
-/* Menu horizontal de opciones*/
-
-#menu {
-    background-color: #333;
-    color: white;
-    height: 80px;
-}
-
-#menu > a {
-    color: white;
-    text-decoration: none;
-}
-
-/*Logo*/
-
-#logo {
-    float: left;
-    padding: 15px 0 0 20px;
-    text-decoration: none;
-}
-
-#logo .sitio {
-    display: block;
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-#logo .sito-desc {
-    display: block;
-    font-weight: 300;
-    font-size: 0.8em;
-    color: #999;
-}
-
-.log {
-    display: block;
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-.sign {
-    display: block;
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-/*Navegacion*/
-
-nav {
-    float: left;
-    margin-left: 10%
-}
-
-nav ul {
-    margin: 0;
-    padding: ;
-    text-align: center;
-    list-style: none;
-
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-}
-
-nav ul li ul {
-    display: none;
-}
-
-nav ul li a:hover + ul, nav ul li ul:hover {
-    display: block;
-    background-color: #333;
-}
-
-
-
-nav ul li a {
-    display: block;
-    padding: 0 5px;
-    width: 140px;
-    text-decoration: none;
-    color: white;
-}
-
-nav ul li a:hover {
-    background-color: #68736F;
-    color: #D7D9D8;
-}
-
-li.menuPadre {
-    position:relative
-}
-
-.manuHijo {
-    position: absolute;
-}
-
-/*Slider de imagenes*/
 /*Slider de imagenes*/
 
 #slider {
@@ -200,8 +101,9 @@ img.logoTema {
 
 img.logoTema:hover {
     width: 45%;
-transition: 2s;
+    transition: 2s;
 }
+
 .logoTema:hover {
     width: 34%;
 }
@@ -259,103 +161,108 @@ div.marcoCentral {
 /*Fin Estilo Tematica*/
 
 /*Estilo Menu y Modal*/
-h3.nombreComida{
-  text-align: center;
+
+h3.nombreComida {
+    text-align: center;
 
 }
+
 div.fotosTematica > div > a:hover {
     opacity: 0.6;
 }
+
 .modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
 
 .modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
 }
 
 .close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background: #00d9ff; }
+.close:hover {
+    background: #00d9ff;
+}
 
 
 .menu-section {
-  margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .menu-section-title {
-  font-family: georgia;
-  font-size: 50px;
-  display: block;
-  font-weight:normal;
-  margin: 20px 0;
-  text-align: Center;
+    font-family: georgia;
+    font-size: 50px;
+    display: block;
+    font-weight: normal;
+    margin: 20px 0;
+    text-align: Center;
 }
 
 .menu-item {
-  margin: 35px 0;
-  font-size: 18px;
+    margin: 35px 0;
+    font-size: 18px;
 }
 
-.menu-item-name{
-  font-family: helvetica;
-  font-weight: bold;
-  border-bottom: 2px dotted rgb(213, 213, 213);
+.menu-item-name {
+    font-family: helvetica;
+    font-weight: bold;
+    border-bottom: 2px dotted rgb(213, 213, 213);
 }
 
 .menu-item-description {
-  font-style: italic;
-  font-size: .9em;
-  line-height: 1.5em;
+    font-style: italic;
+    font-size: .9em;
+    line-height: 1.5em;
 }
 
-.menu-item-price{
-  float: right;
-  font-weight: bold;
-  font-family: arial;
-  margin-top: -22px;
+.menu-item-price {
+    float: right;
+    font-weight: bold;
+    font-family: arial;
+    margin-top: -22px;
 }
 
 /*Fin Estilo Menu*/

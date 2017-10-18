@@ -3,14 +3,15 @@
 
 <head>
 
-  <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
 
-  <title>Bar temático</title>
+    <title>Bar temático</title>
 
-  <link href="css/estilomenu.css" rel="stylesheet" type="text/css" />
-  <link rel="shortcut icon" href="img/zero-logo.jpg" type="image/png" />
+    <link href="css/estilomenu.css" rel="stylesheet" type="text/css" />
+    <link href="css/navegador.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/zero-logo.jpg" type="image/png" />
 
-  <script type="text/javascript" src="js/codigo.js"></script>
+    <script type="text/javascript" src="js/codigo.js"></script>
 </head>
 
 <body>
@@ -38,467 +39,535 @@
                 <li><a href="reserva.html">Reserva</a></li>
             </ul>
         </nav>
+        <!--codigo login register-->
+        <div id="loguear">
+            <h4><a href="#" id="loginform">Login</a> | <a href="#" id="registerForm">Register</a></h4>
+            <div class="login">
+                <div class="arrow-up"></div>
+                <div class="formholder">
 
-        <span class="log">Login</span>
-        <span class="sign">Sign Up</span>
+                    <div class="randompad">
+                        <fieldset>
+                            <label name="email">Email</label>
+                            <input type="email" value="example@example.com" />
+                            <label name="password">Password</label>
+                            <input type="password" />
+                            <input type="submit" value="Login" />
+
+                        </fieldset>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="register">
+                <div class="arrow-up"></div>
+                <div class="formholder">
+                    <div class="randompad">
+                        <form id="registro">
+                            <div>
+                                <label for="nombre">Nombre:</label>
+                                <input class="inputClass" type="text" name="nombre" value="" placeholder="nombre" required/>
+                            </div>
+
+                            <div>
+                                <label for="apellido1">Apellido1:</label>
+                                <input type="text" class="inputClass" name="apellido1" value="" placeholder="apellido1" required/>
+                            </div>
+
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" class="inputClass" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" name="email" value="" placeholder="email" required/>
+
+
+                            </div>
+
+                            <div>
+                                <label for="password">Contraseña:</label>
+
+                                <input type="password" class="inputClass" name="password" value="" placeholder="password" required/>
+
+                            </div>
+                            <div>
+                                <label>Repetir Contraseña:</label>
+
+                                <input type="password" class="inputClass" name="password2" value="" placeholder="repita password" required />
+
+                            </div>
+                            <div>
+                                <input type="submit" value="Registrar" />
+
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ************************************** -->
     </header>
 
-      <!-- Empiza Menu -->
+    <!-- Empiza Menu -->
 
     <h1 class="galTematica">Nuestros Menus</h1>
     <hr class="temaGaleria">
     <div class="fotosTematica">
-      <!-- Entrantes -->
-      <div class="fotoTema">
-        <h3 class="nombreComida">ENTRANTES</h3>
-          <!-- Modal para entrantes -->
-        <a href="#modalEntrantes"><img src="img/entrante.jpg"></a>
-        <div id="modalEntrantes" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>ENTRANTES</h2>
-            <!-- item 1 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Alitas de Chocobo
-              </div>
-              <div class="menu-item-price">
-                3,50€
-              </div>
-              <div class="menu-item-description">
-                Alitas de pollo marinadas con salsa barbacoa.
-              </div>
+        <!-- Entrantes -->
+        <div class="fotoTema">
+            <h3 class="nombreComida">ENTRANTES</h3>
+            <!-- Modal para entrantes -->
+            <a href="#modalEntrantes"><img src="img/entrante.jpg"></a>
+            <div id="modalEntrantes" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>ENTRANTES</h2>
+                    <!-- item 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Alitas de Chocobo
+                        </div>
+                        <div class="menu-item-price">
+                            3,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Alitas de pollo marinadas con salsa barbacoa.
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Arenas del Tiempo
+                        </div>
+                        <div class="menu-item-price">
+                            3,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Hummus servido con galletas saladas para untar.
+                        </div>
+                    </div>
+                    <!-- item 3-->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Gold Coins
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Deliciosos nuggets de queso de cabra al horno con mermelada de tomate.
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Triforce Fries
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Patatas al horno con salsa ranchera, gratinado con 4 tipos de quesos y bacon.
+                        </div>
+                    </div>
+                    <!-- item 5 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Loading Nachos
+                        </div>
+                        <div class="menu-item-price">
+                            3,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Nachos con queso Cheddar fundido y cebollino.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- item 2 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Arenas del Tiempo
-              </div>
-              <div class="menu-item-price">
-                3,50€
-              </div>
-              <div class="menu-item-description">
-                Hummus servido con galletas saladas para untar.
-              </div>
-            </div>
-            <!-- item 3-->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Gold Coins
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-                Deliciosos nuggets de queso de cabra al horno con mermelada de tomate.
-              </div>
-            </div>
-            <!-- item 4 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Triforce Fries
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-                Patatas al horno con salsa ranchera, gratinado con 4 tipos de quesos y bacon.
-              </div>
-            </div>
-            <!-- item 5 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Loading Nachos
-              </div>
-              <div class="menu-item-price">
-                3,50€
-              </div>
-              <div class="menu-item-description">
-                Nachos con queso Cheddar fundido y cebollino.
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- Fin entrantes -->
-      <!-- Hot dogs -->
-      <div class="fotoTema">
-        <h3 class="nombreComida">HOT DOGS</h3>
-          <!-- Modal para hot dogs -->
-        <a href="#modalHotd"><img src="img/hotd.jpg"></a>
-        <div id="modalHotd" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>HOT DOGS</h2>
-            <!-- item 1 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Dog Raider
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-                Queso Monterrey jack, salsa barbacoa, bacon y cebolla frita crujiente.
-              </div>
+        <!-- Fin entrantes -->
+        <!-- Hot dogs -->
+        <div class="fotoTema">
+            <h3 class="nombreComida">HOT DOGS</h3>
+            <!-- Modal para hot dogs -->
+            <a href="#modalHotd"><img src="img/hotd.jpg"></a>
+            <div id="modalHotd" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>HOT DOGS</h2>
+                    <!-- item 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Dog Raider
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Queso Monterrey jack, salsa barbacoa, bacon y cebolla frita crujiente.
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            San Andreas
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Ketchup, mostaza y cebolla crujiente.
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Hot Dog Zero Dawn
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Crema de queso, lechuga, mezcla 4 quesos y cebolla caramelizada.
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Hot Dog Redemption
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Guacamole, salsa Mexicana, chipotle y tiras de maiz crujientes.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- item 2 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                San Andreas
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-                Ketchup, mostaza y cebolla crujiente.
-              </div>
-            </div>
-            <!-- item 3 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Hot Dog Zero Dawn
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-                Crema de queso, lechuga, mezcla 4 quesos y cebolla caramelizada.
-              </div>
-            </div>
-            <!-- item 4 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Hot Dog Redemption
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-                Guacamole, salsa Mexicana, chipotle y tiras de maiz crujientes.
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- Fin HotDogs -->
-      <!-- Hamburguesas -->
-      <div class="fotoTema">
-        <h3 class="nombreComida">HAMBURGUESAS</h3>
-          <!-- Modal para hamburguesas -->
-        <a href="#modalHamb"><img src="img/hamburguesa.jpg"></a>
-        <div id="modalHamb" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>HAMBURGUESAS</h2>
-            <!-- item 1 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Bowser
-              </div>
-              <div class="menu-item-price">
-                6,50€
-              </div>
-              <div class="menu-item-description">
-                Lechuga, tomate, cebolla, queso, ketchup y mostaza.
-              </div>
+        <!-- Fin HotDogs -->
+        <!-- Hamburguesas -->
+        <div class="fotoTema">
+            <h3 class="nombreComida">HAMBURGUESAS</h3>
+            <!-- Modal para hamburguesas -->
+            <a href="#modalHamb"><img src="img/hamburguesa.jpg"></a>
+            <div id="modalHamb" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>HAMBURGUESAS</h2>
+                    <!-- item 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Bowser
+                        </div>
+                        <div class="menu-item-price">
+                            6,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Lechuga, tomate, cebolla, queso, ketchup y mostaza.
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Nashor
+                        </div>
+                        <div class="menu-item-price">
+                            6,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Lechuga, mayonesa, queso monterrey jack, queso cheddar, bacon y cebolla frita crujiente
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Nemesis
+                        </div>
+                        <div class="menu-item-price">
+                            6,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Salsa Argentina, cebolla, champiñones y queso cheddar.
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Godzilla
+                        </div>
+                        <div class="menu-item-price">
+                            6,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Salsa burguer, lechuga, doble de queso Monterrey Jack y pepinillos dulces.
+                        </div>
+                    </div>
+                    <!-- item 5 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Lechuk
+                        </div>
+                        <div class="menu-item-price">
+                            6,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Salsa Honey BBQ, cebolla, doble de quesa cheddar y nachos.
+                        </div>
+                    </div>
+                    <!-- item 6 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            UKA-UKA
+                        </div>
+                        <div class="menu-item-price">
+                            6,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Guacamole, tomate, queso cheddar y cebollino.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- item 2 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Nashor
-              </div>
-              <div class="menu-item-price">
-                6,50€
-              </div>
-              <div class="menu-item-description">
-                Lechuga, mayonesa, queso monterrey jack, queso cheddar, bacon y cebolla frita crujiente
-              </div>
-            </div>
-            <!-- item 3 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Nemesis
-              </div>
-              <div class="menu-item-price">
-                6,50€
-              </div>
-              <div class="menu-item-description">
-                Salsa Argentina, cebolla, champiñones y queso cheddar.
-              </div>
-            </div>
-            <!-- item 4 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Godzilla
-              </div>
-              <div class="menu-item-price">
-                6,50€
-              </div>
-              <div class="menu-item-description">
-              Salsa burguer, lechuga, doble de queso Monterrey Jack y pepinillos dulces.
-              </div>
-            </div>
-            <!-- item 5 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Lechuk
-              </div>
-              <div class="menu-item-price">
-                6,50€
-              </div>
-              <div class="menu-item-description">
-               Salsa Honey BBQ, cebolla, doble de quesa cheddar y nachos.
-              </div>
-            </div>
-            <!-- item 6 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                UKA-UKA
-              </div>
-              <div class="menu-item-price">
-                6,50€
-              </div>
-              <div class="menu-item-description">
-                Guacamole, tomate, queso cheddar y cebollino.
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- Fin Hamburguesas -->
-      <!-- Bocadillos -->
-      <div class="fotoTema">
-        <h3 class="nombreComida">BOCADILLOS</h3>
-          <!-- Modal para bocadillos -->
-        <a href="#modalBoca"><img src="img/bocadillo.jpg"></a>
-        <div id="modalBoca" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>BOCADILLOS</h2>
-            <!-- item 1 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                AWP
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-                Lacón, rúcula, tomate natural y queso de cabra.
-              </div>
+        <!-- Fin Hamburguesas -->
+        <!-- Bocadillos -->
+        <div class="fotoTema">
+            <h3 class="nombreComida">BOCADILLOS</h3>
+            <!-- Modal para bocadillos -->
+            <a href="#modalBoca"><img src="img/bocadillo.jpg"></a>
+            <div id="modalBoca" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>BOCADILLOS</h2>
+                    <!-- item 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            AWP
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Lacón, rúcula, tomate natural y queso de cabra.
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Cho'Gath
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Lomo, jamón York, salsa perrins, cebolla caramelizada.
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Raynor
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Pollo, sobrasada, queso y cebolla caramelizada.
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Trópico
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Pollo, lechuga, curry de mango, tomate natural.
+                        </div>
+                    </div>
+                    <!-- item 5 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Teemo
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Jamón serrano, salsa mery, champìñones y queso.
+                        </div>
+                    </div>
+                    <!-- item 6 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            MERCY
+                        </div>
+                        <div class="menu-item-price">
+                            4,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Lechuga, toamte, queso, lomo y mayonesa.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- item 2 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Cho'Gath
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-                Lomo, jamón York, salsa perrins, cebolla caramelizada.
-              </div>
-            </div>
-            <!-- item 3 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Raynor
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-              Pollo, sobrasada, queso y cebolla caramelizada.
-              </div>
-            </div>
-            <!-- item 4 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Trópico
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-              Pollo, lechuga, curry de mango, tomate natural.
-              </div>
-            </div>
-            <!-- item 5 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Teemo
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-               Jamón serrano, salsa mery, champìñones y queso.
-              </div>
-            </div>
-            <!-- item 6 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                MERCY
-              </div>
-              <div class="menu-item-price">
-                4,50€
-              </div>
-              <div class="menu-item-description">
-                Lechuga, toamte, queso, lomo y mayonesa.
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- Fin Bocadillos -->
-      <!-- Sandwiches -->
-      <div class="fotoTema">
-        <h3 class="nombreComida">SANDWICHES</h3>
-          <!-- Modal para Sandwiches -->
-        <a href="#modalSandw"><img src="img/sandw.jpg"></a>
-        <div id="modalSandw" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>SANDWICHES</h2>
-            <!-- item 1 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Terran
-              </div>
-              <div class="menu-item-price">
-                3€
-              </div>
-              <div class="menu-item-description">
-                Jamón y queso.
-              </div>
+        <!-- Fin Bocadillos -->
+        <!-- Sandwiches -->
+        <div class="fotoTema">
+            <h3 class="nombreComida">SANDWICHES</h3>
+            <!-- Modal para Sandwiches -->
+            <a href="#modalSandw"><img src="img/sandw.jpg"></a>
+            <div id="modalSandw" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>SANDWICHES</h2>
+                    <!-- item 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Terran
+                        </div>
+                        <div class="menu-item-price">
+                            3€
+                        </div>
+                        <div class="menu-item-description">
+                            Jamón y queso.
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Uther
+                        </div>
+                        <div class="menu-item-price">
+                            3,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Tomate, jamón serrano y queso
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Zyra
+                        </div>
+                        <div class="menu-item-price">
+                            3,50€
+                        </div>
+                        <div class="menu-item-description">
+                            Atún, lechuga, mayonesa, tomate y aceitunas.
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Bubble Bobble
+                        </div>
+                        <div class="menu-item-price">
+                            4€
+                        </div>
+                        <div class="menu-item-description">
+                            Crema de qeuso, lechuga, lacón y pepino fresco.
+                        </div>
+                    </div>
+                    <!-- item 5 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            No Ham's Sky
+                        </div>
+                        <div class="menu-item-price">
+                            4€
+                        </div>
+                        <div class="menu-item-description">
+                            Hummus, lechuga, toamte, pepino, rúcula y un toque de pimentón dulce.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- item 2 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Uther
-              </div>
-              <div class="menu-item-price">
-                3,50€
-              </div>
-              <div class="menu-item-description">
-                Tomate, jamón serrano y queso
-              </div>
-            </div>
-            <!-- item 3 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Zyra
-              </div>
-              <div class="menu-item-price">
-                3,50€
-              </div>
-              <div class="menu-item-description">
-              Atún, lechuga, mayonesa, tomate y aceitunas.
-              </div>
-            </div>
-            <!-- item 4 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Bubble Bobble
-              </div>
-              <div class="menu-item-price">
-                4€
-              </div>
-              <div class="menu-item-description">
-                Crema de qeuso, lechuga, lacón y pepino fresco.
-              </div>
-            </div>
-            <!-- item 5 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                No Ham's Sky
-              </div>
-              <div class="menu-item-price">
-                4€
-              </div>
-              <div class="menu-item-description">
-               Hummus, lechuga, toamte, pepino, rúcula y un toque de pimentón dulce.
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- Fin Sandwiches -->
-      <!-- Cócteles -->
-      <div class="fotoTema">
-        <h3 class="nombreComida">COCKTAILS</h3>
-          <!-- Modal para Cócteles -->
-        <a href="#modalCocteles"><img src="img/cocteles.jpg"></a>
-        <div id="modalCocteles" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>COCKTAILS</h2>
-            <!-- item 1 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Ocarina of Lime
-              </div>
-              <div class="menu-item-price">
-                6€
-              </div>
-              <div class="menu-item-description">
-                Ron Superior Bacardi, limas, hojas de menta, azúcar moreno y Sprite.
-              </div>
+        <!-- Fin Sandwiches -->
+        <!-- Cócteles -->
+        <div class="fotoTema">
+            <h3 class="nombreComida">COCKTAILS</h3>
+            <!-- Modal para Cócteles -->
+            <a href="#modalCocteles"><img src="img/cocteles.jpg"></a>
+            <div id="modalCocteles" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>COCKTAILS</h2>
+                    <!-- item 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Ocarina of Lime
+                        </div>
+                        <div class="menu-item-price">
+                            6€
+                        </div>
+                        <div class="menu-item-description">
+                            Ron Superior Bacardi, limas, hojas de menta, azúcar moreno y Sprite.
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Frost Nova
+                        </div>
+                        <div class="menu-item-price">
+                            6€
+                        </div>
+                        <div class="menu-item-description">
+                            Ron Malibú, zumo de piña y ginger ale.
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Devil My Cry
+                        </div>
+                        <div class="menu-item-price">
+                            6€
+                        </div>
+                        <div class="menu-item-description">
+                            Vodka de vainilla, amaretto, crema de coco, zumo de arándanos y granadina.
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            The Cake is a Lie
+                        </div>
+                        <div class="menu-item-price">
+                            6€
+                        </div>
+                        <div class="menu-item-description">
+                            Vodka de vainilla, Frangelico, crema de cacao y Nata.
+                        </div>
+                    </div>
+                    <!-- item 5 -->
+                    <div class="menu-item">
+                        <div class="menu-item-name">
+                            Poison Bottle
+                        </div>
+                        <div class="menu-item-price">
+                            6€
+                        </div>
+                        <div class="menu-item-description">
+                            Vodka de mandarina, licor de mélon, licor de manzada y Sprite.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- item 2 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Frost Nova
-              </div>
-              <div class="menu-item-price">
-                6€
-              </div>
-              <div class="menu-item-description">
-                Ron Malibú, zumo de piña y ginger ale.
-              </div>
-            </div>
-            <!-- item 3 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Devil My Cry
-              </div>
-              <div class="menu-item-price">
-                6€
-              </div>
-              <div class="menu-item-description">
-              Vodka de vainilla, amaretto, crema de coco, zumo de arándanos y granadina.
-              </div>
-            </div>
-            <!-- item 4 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                The Cake is a Lie
-              </div>
-              <div class="menu-item-price">
-                6€
-              </div>
-              <div class="menu-item-description">
-                Vodka de vainilla, Frangelico, crema de cacao y Nata.
-              </div>
-            </div>
-            <!-- item 5 -->
-            <div class="menu-item">
-              <div class="menu-item-name">
-                Poison Bottle
-              </div>
-              <div class="menu-item-price">
-                6€
-              </div>
-              <div class="menu-item-description">
-               Vodka de mandarina, licor de mélon, licor de manzada y Sprite.
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- Fin Cócteles -->
+        <!-- Fin Cócteles -->
     </div>
-  </body>
 
-  </html>
+    <!--Jquery para el register y login -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

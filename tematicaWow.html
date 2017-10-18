@@ -8,6 +8,7 @@
     <title>Bar temático</title>
 
     <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="css/navegador.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="img/zero-logo.jpg" type="image/png" />
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <script type="text/javascript" src="js/codigo.js"></script>
@@ -38,15 +39,77 @@
                 <li><a href="reserva.html">Reserva</a></li>
             </ul>
         </nav>
+        <!--codigo login register-->
+        <div id="loguear">
+            <h4><a href="#" id="loginform">Login</a> | <a href="#" id="registerForm">Register</a></h4>
+            <div class="login">
+                <div class="arrow-up"></div>
+                <div class="formholder">
 
-        <span class="log">Login</span>
-        <span class="sign">Sign Up</span>
+                    <div class="randompad">
+                        <fieldset>
+                            <label name="email">Email</label>
+                            <input type="email" value="example@example.com" />
+                            <label name="password">Password</label>
+                            <input type="password" />
+                            <input type="submit" value="Login" />
+
+                        </fieldset>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="register">
+                <div class="arrow-up"></div>
+                <div class="formholder">
+                    <div class="randompad">
+                        <form id="registro">
+                            <div>
+                                <label for="nombre">Nombre:</label>
+                                <input class="inputClass" type="text" name="nombre" value="" placeholder="nombre" required/>
+                            </div>
+
+                            <div>
+                                <label for="apellido1">Apellido1:</label>
+                                <input type="text" class="inputClass" name="apellido1" value="" placeholder="apellido1" required/>
+                            </div>
+
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" class="inputClass" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" name="email" value="" placeholder="email" required/>
+
+
+                            </div>
+
+                            <div>
+                                <label for="password">Contraseña:</label>
+
+                                <input type="password" class="inputClass" name="password" value="" placeholder="password" required/>
+
+                            </div>
+                            <div>
+                                <label>Repetir Contraseña:</label>
+
+                                <input type="password" class="inputClass" name="password2" value="" placeholder="repita password" required />
+
+                            </div>
+                            <div>
+                                <input type="submit" value="Registrar" />
+
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ************************************** -->
     </header>
     <div class="marcoCentralWow">
         <div class="textoTematica">
             <p class="main">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis mollis nisl id efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean molestie massa sed sollicitudin luctus. Donec lacus leo, tristique a est quis, aliquet blandit mauris. Sed pretium molestie massa vitae dapibus. Nam egestas sed felis sed maximus. Aenean nisi lorem, efficitur sit amet vulputate sed, pretium a arcu. Aenean semper, sapien sit amet eleifend fringilla, odio purus fermentum felis, at bibendum mauris mauris quis ex. Donec vel augue eget sapien euismod mattis. Curabitur efficitur pretium sapien at dignissim.
-Morbi eget mauris tempus orci ullamcorper finibus a vitae arcu. Fusce eu rhoncus sem. Quisque sed accumsan nulla. Praesent eros lorem, maximus at pretium ac, dictum quis sapien. Morbi ante lectus, hendrerit a pharetra non, bibendum id ex. Ut congue eu justo sit amet fringilla. Nullam pellentesque est vitae tempus vulputate. Proin posuere gravida erat, eu consectetur dui tincidunt ac. Nullam egestas sollicitudin turpis sed volutpat. Sed eu risus nisi. Maecenas placerat libero quis turpis scelerisque ullamcorper. Donec vestibulum semper cursus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis mollis nisl id efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean molestie massa sed sollicitudin luctus. Donec lacus leo, tristique a est quis, aliquet blandit mauris. Sed pretium molestie massa vitae dapibus. Nam egestas sed felis sed maximus. Aenean nisi lorem, efficitur sit amet vulputate sed, pretium a arcu. Aenean semper, sapien sit amet eleifend fringilla, odio purus fermentum felis, at bibendum mauris mauris quis ex. Donec vel augue eget sapien euismod mattis. Curabitur efficitur pretium sapien at dignissim. Morbi eget mauris tempus orci ullamcorper finibus a vitae arcu. Fusce eu rhoncus sem. Quisque sed accumsan nulla. Praesent eros lorem, maximus at pretium ac, dictum quis sapien. Morbi ante lectus, hendrerit a pharetra non, bibendum id ex. Ut congue eu justo sit amet fringilla. Nullam pellentesque est vitae tempus vulputate. Proin posuere gravida erat, eu consectetur dui tincidunt ac. Nullam egestas sollicitudin turpis sed volutpat. Sed eu risus nisi. Maecenas placerat libero quis turpis scelerisque ullamcorper. Donec vestibulum semper cursus.
         </div>
 
     </div>
@@ -61,6 +124,11 @@ Morbi eget mauris tempus orci ullamcorper finibus a vitae arcu. Fusce eu rhoncus
         <div class="fotoTema"><img src="img/bar6.jpg"></div>
 
     </div>
+
+    <!--Jquery para el register y login -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/login.js"></script>
 </body>
 
 </html>

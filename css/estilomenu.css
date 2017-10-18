@@ -198,10 +198,10 @@ div.fotosTematica > div > a:hover {
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
+    background-image: url(/img/fondoNav.jpg);
+    background-position: 500px 0;
+    background-attachment: inherit;
+    color: white;
 }
 
 .close {

@@ -56,8 +56,7 @@ hr.theme {
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
-    background: grey;
-    margin: 25px 0 25px;
+    background-image: url(/img/fondoNav.jpg);    margin: 25px 0 25px;
     overflow: hidden;
     padding: 20px;
     border-radius: 35px 0px 35px 0px;

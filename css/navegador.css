@@ -1,6 +1,7 @@
 /* Menu horizontal de opciones*/
 #menu {
-    background-color: #333;
+    font-weight: 300;
+    background-image: url(/img/fondoNav.jpg);
     color: white;
     height: 80px;
 }
@@ -70,7 +71,10 @@ nav ul li ul {
 
 nav ul li a:hover + ul, nav ul li ul:hover {
     display: block;
-    background-color: #333;
+/*    background-color: #333;*/
+    background-image: url(/img/fondoNav.jpg);
+    background-position: 500px 0;
+    background-attachment: inherit;
 }
 
 
@@ -84,8 +88,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #68736F;
-    color: #D7D9D8;
+    color: #1abc9c;
 }
 
 li.menuPadre {
@@ -127,7 +130,9 @@ li.menuPadre {
 }
 
 .formholder {
-  background: #68736F;
+    background-image: url(/img/fondoNav.jpg);
+    background-position: 700px 0;
+    background-attachment: inherit;
     font-weight: bold;
   width: 350px;
   border-radius: 5px;

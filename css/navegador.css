@@ -6,11 +6,32 @@
     height: 80px;
 }
 
-#menu > a {
+#menu div > a {
     color: white;
     text-decoration: none;
 }
 
+
+/* solucionar problema posicion*/
+.navegador{
+    float: left;
+    position: relative;
+
+}
+
+#logoLink{
+    width: 10%;
+    
+}
+
+#navPort{
+   width: 60%; 
+
+}
+
+
+
+/*-----------------------------------*/
 /*Logo*/
 
 #logo {
@@ -49,7 +70,9 @@
 
 nav {
     float: left;
-    margin-left: 10%
+    margin-left: 10%;
+    /*añadido para solucionar posicion 19/10/2017 adrian*/
+    width: 100%;
 }
 
 nav ul {
@@ -102,19 +125,19 @@ li.menuPadre {
 /*Estilos login register*/
 
 .login {
-  position: relative;
+  position: absolute;
   width: 350px;
   display: none;
-  left: 1183px;
-  top: 61px;
+  left: -40%;
+  top: 130%;
 }
 
 .register {
-  position: relative;
+  position: absolute;
   width: 350px;
   display: none;
-  left: 1225px;
-  top: 70px;
+  left: -26%;
+  top: 130%;
 }
 
 .arrow-up {
@@ -123,7 +146,7 @@ li.menuPadre {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 15px solid #68736F;
-  left: 10%;
+  left: 70%;
   position: absolute;
   top: -10px;
 
@@ -196,7 +219,8 @@ h4>a:hover {
 }
 #loguear{
     color:black;
-
+    width: 20%;
+    position:relative;
 }
 fieldset {
   border: none;

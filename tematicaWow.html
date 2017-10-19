@@ -15,16 +15,17 @@
 </head>
 
 <body>
-    <header id="menu">
+      <header id="menu">
 
         <!-- Logo del header -->
-
+        <div class='navegador' id='logoLink'>
         <a id="logo" href="index.html">
             <span class="sitio">Bar Tematico</span>
             <span class="sitio-desc">Proyecto Interface - Fase Zero</span>
         </a>
-
-        <nav>
+        </div>    
+        <div class='navegador' id=navPort>
+            <nav>
             <ul>
                 <li><a href="pag1.html">¿Quienes Somos?</a></li>
                 <li><a href="menus.html">Menus</a></li>
@@ -39,73 +40,74 @@
                 <li><a href="reserva.html">Reserva</a></li>
             </ul>
         </nav>
+        </div>    
         <!--codigo login register-->
-        <div id="loguear">
+        <div class='navegador' id="loguear">
             <h4><a href="#" id="loginform">Login</a> | <a href="#" id="registerForm">Register</a></h4>
             <div class="login">
-                <div class="arrow-up"></div>
-                <div class="formholder">
+              <div class="arrow-up"></div>
+                  <div class="formholder">
 
                     <div class="randompad">
-                        <fieldset>
-                            <label name="email">Email</label>
-                            <input type="email" value="example@example.com" />
-                            <label name="password">Password</label>
-                            <input type="password" />
-                            <input type="submit" value="Login" />
+                       <fieldset>
+                         <label name="email">Email</label>
+                         <input type="email" value="example@example.com" />
+                         <label name="password">Password</label>
+                         <input type="password" />
+                         <input type="submit" value="Login" />
 
-                        </fieldset>
+                       </fieldset>
                     </div>
 
 
-                </div>
+                  </div>
             </div>
             <div class="register">
-                <div class="arrow-up"></div>
-                <div class="formholder">
-                    <div class="randompad">
-                        <form id="registro">
-                            <div>
-                                <label for="nombre">Nombre:</label>
-                                <input class="inputClass" type="text" name="nombre" value="" placeholder="nombre" required/>
-                            </div>
+              <div class="arrow-up"></div>
+              <div class="formholder">
+                <div class="randompad">
+                    <form id="registro">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input class="inputClass" type="text" name="nombre" value="" placeholder="nombre" required/>
+                    </div>
 
-                            <div>
-                                <label for="apellido1">Apellido1:</label>
-                                <input type="text" class="inputClass" name="apellido1" value="" placeholder="apellido1" required/>
-                            </div>
+                    <div>
+                        <label for="apellido1">Apellido1:</label>
+                        <input type="text" class="inputClass" name="apellido1" value="" placeholder="apellido1" required/>
+                    </div>
 
-                            <div>
-                                <label for="email">Email:</label>
-                                <input type="email" class="inputClass" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" name="email" value="" placeholder="email" required/>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" class="inputClass" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" name="email" value="" placeholder="email" required/>
 
-
-                            </div>
-
-                            <div>
-                                <label for="password">Contraseña:</label>
-
-                                <input type="password" class="inputClass" name="password" value="" placeholder="password" required/>
-
-                            </div>
-                            <div>
-                                <label>Repetir Contraseña:</label>
-
-                                <input type="password" class="inputClass" name="password2" value="" placeholder="repita password" required />
-
-                            </div>
-                            <div>
-                                <input type="submit" value="Registrar" />
-
-                            </div>
 
                     </div>
 
-                </div>
-            </div>
+                    <div>
+                        <label for="password">Contraseña:</label>
+
+                        <input type="password" class="inputClass" name="password" value="" placeholder="password" required/>
+
+                    </div>
+                    <div>
+                        <label>Repetir Contraseña:</label>
+
+                        <input type="password" class="inputClass" name="password2" value="" placeholder="repita password" required />
+
+                    </div>
+                    <div>
+                        <input type="submit" value="Registrar"/>
+
+                    </div>
+
+        </div>
+
+      </div>
+    </div>
         </div>
         <!-- ************************************** -->
-    </header>
+    </header>    
     <div class="marcoCentralWow">
         <div class="textoTematica">
             <p class="main">
